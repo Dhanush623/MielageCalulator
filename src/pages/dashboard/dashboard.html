@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar color='primary' hideBackButton >
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content color='black'>
+  <ion-label *ngIf='!item' style='text-align: center;'>{{empty}}</ion-label> 
+  <ion-card style='margin-top: 2%;' *ngFor = 'let item of items' reorder="false" class='card' >
+    <ion-card-content>
+      <ion-card-title> <!-- style=" background-color : rgb(253, 2, 2)" -->
+        <b> {{item.place}}</b>
+        <ion-icon name="locate" small item-left style="float: right;"></ion-icon>
+      </ion-card-title>
+      <p>Distance : {{item.distance}} km <b style='float:right'>Date : {{item.date}}</b><br></p>
+      <p>Petrol : {{item.petrol}} lt<br></p>
+      <p>Price : {{item.price}} rs<br></p>
+      <p style="color: rgb(253, 2, 2)">Mileage per/lt : {{item.calculate}} /km<br></p>
+      <p>Average : {{item.average}} ml per/km<br></p>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-fab right bottom>
+    <button ion-fab color="primary" (click)='plus()' large ><ion-icon name="add"></ion-icon></button>   
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,52 @@
+page-dashboard {
+    .card { 
+        border-radius : 15px;
+        box-shadow: 2px 2px 2px 2px grey;
+     }
+     .accordion-list {
+        background:transparent;
+        border-bottom:1px solid;
+       
+    }
+    .section {
+        background: #fff;
+        color: #000;
+        border-radius: 15px;
+        margin-bottom: 4px;
+    }
+    .section-active {
+        /*background-color: #DDD;*/
+        color: #000;
+        border-radius: 5px;
+        /*border: 1px red solid;*/
+    }
+ 
+    .child {
+        background: #e8e7e6;
+        color: #000;
+        margin-bottom: 4px;
+    }
+    .child-item {
+        background: #f3f2f1;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .label {
+        margin: 0px;
+        text-align: left;
+    }
+    .list {
+        margin-bottom: 4px;
+        /*transform-style: preserve-3d;*/
+        transition-duration: 5s;
+    }
+    .item{
+        text-align: left;
+    }
+    .button{
+        border-radius: 15px;
+    }
+    .header{
+        border: 5px;
+    }
+}

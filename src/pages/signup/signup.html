@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar color='primary' hideBackButton >
+    <ion-title>Signup Form</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>User Name</ion-label>
+    <ion-input placeholder='Enter User Name' [(ngModel)]="userName"></ion-input>
+  </ion-item>
+  <ion-item>
+    <button ion-button block (click)='signup(userName)' >Enter</button>
+  </ion-item>
+    
+
+</ion-content>
