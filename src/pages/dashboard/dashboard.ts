@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage , NavController, NavParams, PopoverController } from 'ionic-angular';
 import { MileagePage } from '../mileage/mileage';
-import { AboutPage } from '../about/about'
 @IonicPage()
 @Component({
   selector: 'page-dashboard',
